@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>canvas</title>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <div class=box>
+    <input id="size" type="range" min="0" max="50" value="5" step="5">
+    <input id="color" type="color" value="#778899">
+    <button id="square"><i class="fas fa-square"></i></button>
+    <button id="circle"><i class="fas fa-circle"></i></button>
+    <button id="butt"><i class="fas fa-paint-brush"></i></button>
+    <button id="clear"><i class="fas fa-eraser"></i></button>
+    <button id="openFile"><i class="fas fa-images"></i></button>
+    <input id="insertImage" type="file" accept="image/*" />
+    <div id="filters">
+      <button id="brightness">Brightness</button>
+      <button id="darken">Darken</button>
+    </div>
+
+  </div>
+  <script src="filter.js"></script>
+  <script src="image.js"></script>
+  <script src="canvas.js"></script>
+</body>
+
+</html>

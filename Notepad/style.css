@@ -1,0 +1,158 @@
+body {
+  background: rgb(238, 174, 202) !important;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%) !important;
+  font-family: sans-serif;
+}
+
+.text,
+label,
+#theme_select {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#theme_select {
+  margin: 0;
+}
+
+#note_container,
+#pinned_note {
+  width: 100%;
+  float: left;
+}
+
+#color_pallete {
+  margin-top: 20px;
+  width: 60%;
+  background: transparent;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+#color_pallete option {
+  background-color: black;
+}
+
+.white {
+  color: white;
+}
+
+.purple {
+  color: #6a0aab;
+}
+
+.red {
+  color: #f81c32;
+}
+
+.orange {
+  color: rgba(255, 68, 0, 0.687);
+}
+
+#clear_storage,
+#add_note {
+  width: 15%;
+  background: transparent;
+  color: black;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+#clear_storage:hover,
+#add_note:hover {
+  opacity: .7;
+}
+
+.box {
+  position: relative;
+  float: left;
+  background: white;
+  width: 20%;
+  margin: 15px;
+  border-radius: 5px;
+  height: 180px;
+}
+
+#deletebtn {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 15px;
+  height: 15px;
+}
+
+#deletebtn:before,
+#deletebtn:after {
+  position: absolute;
+  left: 5px;
+  top: -2px;
+  content: ' ';
+  height: 15px;
+  width: 1px;
+  background-color: black;
+}
+
+#deletebtn:before {
+  transform: rotate(45deg);
+}
+
+#deletebtn:after {
+  transform: rotate(-45deg);
+}
+
+.title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 0;
+  color: black;
+}
+
+.note {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+#title_input::placeholder,
+#note_input::placeholder {
+  color: black;
+  text-align: center;
+}
+
+#title_input:focus::placeholder,
+#note_input:focus::placeholder {
+  opacity: 0;
+}
+
+#title_input,
+#note_input {
+  width: 60%;
+  text-align: center;
+  background: transparent;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px 0 20px 0;
+}
+
+#note_input {
+  resize: none;
+}
+
+.topdiv p {
+  font-weight: bold;
+  margin: 0;
+  color: black;
+  font-size: 10px;
+}
+
+.custom-switch {
+  text-align: center;
+}

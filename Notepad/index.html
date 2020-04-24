@@ -1,0 +1,62 @@
+< !DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <center>
+        <form>
+          <div class="form-group">
+            <label for="title_input">Title</label>
+            <input type="text" class="form-control" id="title_input" placeholder="Write title" required>
+          </div>
+          <div class="form-group">
+            <label for="note_input">Note</label>
+            <textarea id="note_input" class="form-control" placeholder="Write note" rows="4" required></textarea>
+          </div>
+          <div class="form-group">
+            <p id="theme_select">Choose color theme</p>
+            <select class="custom-select" id="color_pallete">
+              <option class="white" value="#ffffff">White</option>
+              <option class="purple" value="#6a0aab">Purple</option>
+              <option class="red" value="#f81c32">Red</option>
+              <option class="orange" value="#ff851b">Orange</option>
+            </select>
+          </div>
+        </form>
+      </center>
+      <div class="form-group">
+        <div class="custom-control custom-switch"><input id="pin" type="checkbox"
+            class="custom-control-input"></button><label for="pin" class="custom-control-label">Pin me !</label></div>
+      </div>
+      <div class='buttons container mt-4'>
+        <center><button id="add_note" class="btn btn-primary">Add note</button></center>
+        <center><button id="clear_storage" class="btn btn-primary">Clear storage</button></center>
+      </div>
+      <div class="label">
+        <p class="text">Pinned notes</p>
+      </div>
+      <div id="pinned_note"></div>
+      <div class="label">
+        <p class="text">Notes</p>
+      </div>
+      <div id="note_container"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/wholeNote.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/notesGenerator.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+  </html>
